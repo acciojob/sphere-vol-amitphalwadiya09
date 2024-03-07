@@ -14,7 +14,7 @@ function volume_sphere() {
 
     // Display the volume in the second input field
     let volumeInput = document.getElementById('volume');
-    volumeInput.value = volume.toFixed(2); // Displaying volume with 2 decimal places
+    volumeInput.value = volume.toFixed(4); // Displaying volume with 2 decimal places
 
     // Prevent form submission
     return false;
