@@ -4,8 +4,9 @@ function volume_sphere() {
     let radius = parseFloat(radiusInput.value);
 
     // Check if the input is a valid number
-    if (isNaN(radius)) {
-        alert("Please enter a valid number for the radius.");
+    if (isNaN(radius) || radius<=0) {
+        let volumeInput = document.getElementById('volume');
+    volumeInput.value = "NaN"; 
         return false;
     }
 
